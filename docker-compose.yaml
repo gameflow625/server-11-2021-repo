@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  godot:
+    build: .
+    ports:
+      - "8000:80"
+      - "8000:80/tcp"
+      - "8000:80/udp"
+    tty: true
+    container_name: godot-server
